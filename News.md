@@ -1,3 +1,3 @@
-$$ 
-L(\theta) = \mathbb{E}_{x,\epsilon,t}\Big\|\text{NN}_{\theta}(z|t) - r(x,\epsilon,t)\Big\|^2 
-$$
+\[
+L_{DPO}(\pi_\theta; \pi_{ref}) = -\mathbb{E}_{(x, y^+, y^-) \sim D_{pref}} \left[ \log \sigma(r) \right]
+\]
